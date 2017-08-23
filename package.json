@@ -3,7 +3,7 @@
   "private": true,
   "scripts": {
     "start": "node server.js",
-	"protractor": "node server.js"
+	  "protractor": "node testServer.js"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
