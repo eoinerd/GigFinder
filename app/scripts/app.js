@@ -16,14 +16,29 @@ var gigFinderApp = angular
     'ngSanitize',
     'ngTouch'
   ])
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
-        controllerAs: 'main'
-      })
+        controllerAs: 'main'})
+      .when('/gig/:gigId', {
+        templateUrl: 'views/gigDetails.html',
+        controller: 'gigDetailsController',
+        resolve: {
+            gig: function($route, gigData){
+                return gigData.getGig($route.current.pathParams.gigId).$promise;
+            }
+        }
+     })
+    // .$routeProvider.when('/register',
+    //                     {
+    //     templateUrl: 'views/register.html',
+    //     controller: 'userController'
+    // })
       .otherwise({
         redirectTo: '/'
       });
+
+        $locationProvider.html5Mode(true);
   });

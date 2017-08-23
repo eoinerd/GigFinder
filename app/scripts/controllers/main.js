@@ -25,17 +25,7 @@ gigFinderApp
                 "city": "Dublin",
                 "province": "Leinster"
             },
-            "imageUrl": "http://pascalprecht.github.com/slides/angularjs-insights/img/angularjs-logo.png",
-            // "sessions": [
-            // {
-					  //         "id": 1,
-            //         "name": "Directives Masterclass",
-            //         "creatorName": "Bob Smith",
-            //         "duration": 1,
-            //         "level": "Advanced",
-            //         "abstract": "In this session you will learn the ins and outs of directives!",
-            //         "upVoteCount": 0
-            // }],
+            "imageUrl": "/../../images/maxresdefault.jpg",
         },
          {"name": "Calibre",
             "id": 2,
@@ -46,7 +36,29 @@ gigFinderApp
                 "city": "Cork",
                 "province": "Munster"
             },
-            "imageUrl": "http://pascalprecht.github.com/slides/angularjs-insights/img/angularjs-logo.png",
+            "imageUrl": "/../../images/maxresdefault.jpg",
+        }
+        ,{"name": "MndDsgn",
+            "id": 3,
+            "date": "10/6/2018",
+            "time": "10:30 am",
+            "location": {
+                "address": "South Central",
+                "city": "Los Angeles",
+                "province": "California"
+            },
+            "imageUrl": "/../../images/maxresdefault.jpg",
+        },
+         {"name": "OneMind",
+            "id": 4,
+            "date": "25/5/2017",
+            "time": "6:00 pm",
+            "location": {
+                "address": "Rinse",
+                "city": "Brighton",
+                "province": "UK"
+            },
+            "imageUrl": "/../../images/maxresdefault.jpg",
         }
         
     ];

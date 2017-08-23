@@ -1,0 +1,11 @@
+{"name": "MndDsgn",
+            "id": 3,
+            "date": "10/6/2018",
+            "time": "10:30 am",
+            "location": {
+                "address": "South Central",
+                "city": "Los Angeles",
+                "province": "California"
+            },
+            "imageUrl": "/../../images/maxresdefault.jpg",
+        }

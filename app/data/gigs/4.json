@@ -1,0 +1,11 @@
+   {"name": "OneMind",
+            "id": 4,
+            "date": "25/5/2017",
+            "time": "6:00 pm",
+            "location": {
+                "address": "Rinse",
+                "city": "Brighton",
+                "province": "UK"
+            },
+            "imageUrl": "/../../images/maxresdefault.jpg",
+        }
