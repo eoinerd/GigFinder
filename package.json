@@ -2,8 +2,8 @@
   "name": "gigfinder",
   "private": true,
   "scripts": {
-    "start": "gulp serve",
-	"protractor": "gulp watch"
+    "start": "node server.js",
+	"protractor": "node server.js"
   },
   "devDependencies": {
     "gulp": "^3.9.0",
