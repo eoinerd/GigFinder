@@ -1,6 +1,9 @@
 {
   "name": "gigfinder",
   "private": true,
+  "scripts": {
+    "start": "gulp serve"
+  }
   "devDependencies": {
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "2.3.1",
@@ -32,5 +35,8 @@
   },
   "engines": {
     "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "modulus": "^6.5.0"
   }
 }
