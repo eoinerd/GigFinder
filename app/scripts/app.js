@@ -8,7 +8,7 @@
  *
  * Main module of the application.
  */
-angular
+var gigFinderApp = angular
   .module('gigFinderApp', [
     'ngAria',
     'ngResource',

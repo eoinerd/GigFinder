@@ -1,0 +1,23 @@
+<a href="gig/{{gig.id}}">
+    <div class="well hoverwell">
+        <div class="row">
+            <h2 class="span6">{{gig.name}}</h2>
+        </div>
+        <div class="row">
+            <span class="span1">Date:</span>
+            <span> {{gig.date}}</span>
+        </div>
+        <div class="row">
+            <span class="span1">Time</span>
+            <span>{{gig.time}}</span>
+        </div>
+        <div class="row">
+            <span class="span1">Location</span>
+            <span>{{gig.location.address}}</span>
+        </div>
+        <div class="row">
+            <span class="span1">&nbsp;</span>
+            <span>{{gig.location.city}}, {{gig.location.province}}</span>
+        </div>
+    </div>
+</a>
