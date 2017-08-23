@@ -1,3 +1,9 @@
+var $ = require('gulp-load-plugins')();
+var yeoman = {
+  app: require('./bower.json').appPath || 'app',
+  dist: 'dist'
+};
+
 $.connect.server({
     root: [yeoman.app, '.tmp'],
     livereload: true,

@@ -81,14 +81,6 @@ gulp.task('start:server', function() {
     port: 9000
   });
 });
-
-    gulp.task('serve', function (cb) {
-        runSequence('clean:tmp',
-        ['lint:scripts'],
-        ['start:client'],
-        ['bower'],
-        'watch', cb);
-    });
 	
 gulp.task('start:server:test', function() {
   $.connect.server({
