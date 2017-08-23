@@ -1,13 +1,25 @@
 <div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
+  <h1>Find A Gig!</h1>
   <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
+    <img src="images/Outlook-14-promo-shot.jpg" style="width: 90%;" alt="I'm Yeoman"><br>
   </p>
+
+  <div class="row">
+  <div>    
+    <hr/>
+    <hr/>
+    <ul class="thumbnails">
+        <li style="list-style: none;" ng-repeat="gig in gigs" class="span5">
+            <gig-thumbnail gig="gig"/>
+        </li>
+    </ul>
+</div>
+</div>
+
   <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
 </div>
 
-<div class="row marketing">
+<!--<div class="row marketing">
   <h4>HTML5 Boilerplate</h4>
   <p>
     HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
@@ -20,4 +32,5 @@
 
   <h4>Karma</h4>
   <p>Spectacular Test Runner for JavaScript.</p>
-</div>
+</div>-->
+
