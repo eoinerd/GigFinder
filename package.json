@@ -1,7 +1,6 @@
 {
   "name": "gigfinder",
   "private": true,
-  // "main": "start.js",
   "scripts": {
     "start": "node server.js",
     "protractor": "node testServer.js"
