@@ -15,6 +15,88 @@ gigFinderApp
       'Karma'
     ];
 
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // this loop wont work as expected
+    for (var i = 1; i <= 5; i++){
+        setTimeout(function() {
+            console.log("i: " + i);
+        }, i * 1000);
+    }
+
+    for (var i = 1; i <= 5; i++){
+
+        // use IIFE
+        (function(i) {
+            setTimeout(function() {
+            console.log("i: " + i);
+        }, i * 1000)})(i);
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // use let keyword for setting i its own
+    // scope every time
+    for (let i = 1; i <= 5; i++){
+        setTimeout(function() {
+            console.log("i: " + i);
+        }, i * 1000);
+    }
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // not closure - object reference - must be a function so it can be
+    // transported out for it to be closure
+    var foo = (function(){
+
+        var o = { bar: "bar" };
+
+        return { obj: o };
+
+    })();
+
+    console.log(foo.obj.bar);
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // classic module  pattern
+    var foo = (function(){
+
+        var o = { bar: "bar" };
+
+        return {
+            bar: function() {
+                console.log(o.bar);
+            }
+        };
+
+    })();
+
+    foo.bar();
+
+    ////////////////////////////////////////////////////////////////////////////////////
+
+    // Another variation of module pattern (modified module pattern)
+    var foo = (function(){
+        
+        var publicAPI = {
+            bar: function() {
+                publicAPI.baz();
+            },
+            baz: function() {
+                console.log("baz");
+            }
+        };
+        return publicAPI;
+    })();
+        
+    foo.bar();
+
+    // $.getJSON("http://api.songkick.com/api/3.0/events.json?location=clientip&apikey={your_api_key}&jsoncallback=?",
+    // function(data){
+    // // data is JSON response object
+    // });
+
     $scope.gigs = [
           {"name": "Kerri Chandler",
             "id": 1,
@@ -60,7 +142,5 @@ gigFinderApp
             },
             "imageUrl": "/images/maxresdefault.jpg"
         }
-        
     ];
-
   });
