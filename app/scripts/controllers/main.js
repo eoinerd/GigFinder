@@ -25,7 +25,7 @@ gigFinderApp
                 "city": "Dublin",
                 "province": "Leinster"
             },
-            "imageUrl": "/../../images/maxresdefault.jpg",
+            "imageUrl": "/images/kerri.jpeg"
         },
          {"name": "Calibre",
             "id": 2,
@@ -36,7 +36,7 @@ gigFinderApp
                 "city": "Cork",
                 "province": "Munster"
             },
-            "imageUrl": "/../../images/maxresdefault.jpg",
+            "imageUrl": "/images/Calibre-3-650-80.jpg"
         }
         ,{"name": "MndDsgn",
             "id": 3,
@@ -47,7 +47,7 @@ gigFinderApp
                 "city": "Los Angeles",
                 "province": "California"
             },
-            "imageUrl": "/../../images/maxresdefault.jpg",
+            "imageUrl": "/images/thehundreds_mndsgnweb-12.jpg"
         },
          {"name": "OneMind",
             "id": 4,
@@ -58,7 +58,7 @@ gigFinderApp
                 "city": "Brighton",
                 "province": "UK"
             },
-            "imageUrl": "/../../images/maxresdefault.jpg",
+            "imageUrl": "/images/maxresdefault.jpg"
         }
         
     ];
