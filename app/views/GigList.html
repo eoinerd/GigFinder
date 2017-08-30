@@ -1,0 +1,23 @@
+<div class="jumbotron">
+  <h1>Find A Gig!</h1>
+  <p class="lead">
+    <img src="/../images/Outlook-14-promo-shot.jpg" style="width: 90%;" alt="I'm Yeoman"><br>
+  </p>
+
+  <div class="row">
+  <div>    
+    <hr/>
+    <hr/>
+    <ul class="thumbnails">
+        <li style="list-style: none;" ng-repeat="gig in gigs" class="span5">
+            <gig-thumbnail gig="gig"/>
+        </li>
+    </ul>
+</div>
+<div class="row">
+    <a class="btn btn-lg btn-success" ng-href="#/">Search <span class="glyphicon glyphicon-search"></span></a>
+  </div>
+</div>
+</div>
+
+

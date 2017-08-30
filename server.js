@@ -1,6 +1,6 @@
 var express = require('express');
 var path = require('path');
-var gigs = require('./gigsController');
+var gigs = require('./scripts/gigsControllerData');
 var app = express();
 var rootPath = path.normalize(__dirname + '/../');
 var bodyParser = require('body-parser');
@@ -12,7 +12,7 @@ app.use(bodyParser.json());
 app.use(express.static(rootPath + '/app'));
 
 app.get('/data/gig/:id', gigs.get);
-//app.get('/data/event', events.getAll);
+app.get('/data/gig', gigs.getAll);
 app.post('/data/gig/:id', gigs.save);
 app.get('*', function(req, res) { res.sendFile(rootPath + '/GigFinder/app/index.html'); });
 

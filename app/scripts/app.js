@@ -17,28 +17,35 @@ var gigFinderApp = angular
     'ngTouch'
   ])
   .config(function ($routeProvider, $locationProvider) {
-    $routeProvider
-      .when('/', {
-        templateUrl: 'views/main.html',
-        controller: 'MainCtrl',
-        controllerAs: 'main'})
-      .when('/gig/:gigId', {
-        templateUrl: 'views/gigDetails.html',
-        controller: 'gigDetailsController',
-        resolve: {
-            gig: function($route, gigData){
-                return gigData.getGig($route.current.pathParams.gigId).$promise;
-            }
-        }
-     })
-    // .$routeProvider.when('/register',
-    //                     {
-    //     templateUrl: 'views/register.html',
-    //     controller: 'userController'
-    // })
-      .otherwise({
-        redirectTo: '/'
-      });
+    $routeProvider.when('/newGig', {
+          templateUrl: 'views/NewGig.html',
+          controller: 'EditGigController'
+        });
+    $routeProvider.when('/gigs', {
+          templateUrl: 'views/GigList.html',
+          controller: 'GigListController'
+        });
+        $routeProvider.when('/gig/:gigId', {
+          templateUrl: 'views/GigDetails.html',
+          controller: 'GigController'
+        });    
+    // $routeProvider.when('/gig/:gigId', {
+    //       templateUrl: 'views/gigDetails.html',
+    //       controller: 'gigDetailsController',
+    //       resolve: {
+    //           gig: function($route, gigData){
+    //               return gigData.getGig($route.current.pathParams.gigId).$promise;
+    //           }
+    //       }});
+    
+      // .$routeProvider.when('/register',
+      //                     {
+      //     templateUrl: 'views/register.html',
+      //     controller: 'userController'
+      // })
+      $routeProvider.otherwise({
+          redirectTo: '/gigs'
+        });
 
-        $locationProvider.html5Mode(true);
+       // $locationProvider.html5Mode(true);
   });
