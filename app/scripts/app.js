@@ -47,5 +47,5 @@ var gigFinderApp = angular
           redirectTo: '/gigs'
         });
 
-       // $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode(true);
   });
