@@ -40,6 +40,8 @@
   "dependencies": {
     "body-parser": "^1.17.2",
     "modulus": "^6.5.0",
+    "mongojs": "^2.4.1",
+    "mongoose": "^4.11.9",
     "protractor": "^5.1.2"
   }
 }

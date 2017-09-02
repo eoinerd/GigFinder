@@ -1,5 +1,16 @@
 <div class="jumbotron">
   <h1>Find A Gig!</h1>
+<div class="alert alert-dismissible alert-success">
+  <button type="button" class="close" data-dismiss="alert">&times;</button>
+  <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
+</div>
+  <div class="row">
+    <input type="text" class="form-control" style="width: 83%;display: block;margin: 0 auto;" />
+    <div style="padding:25px;">
+      <a class="btn btn-lg btn-success" ng-href="#/">Search <span class="glyphicon glyphicon-search"></span></a>
+      </div>
+  </div>
+
   <p class="lead">
     <img src="/../images/Outlook-14-promo-shot.jpg" style="width: 90%;" alt="I'm Yeoman"><br>
   </p>
@@ -9,14 +20,11 @@
     <hr/>
     <hr/>
     <ul class="thumbnails">
-        <li style="list-style: none;" ng-repeat="gig in gigs" class="span5">
+        <li style="list-style: none;" ng-repeat="gig in gigs track by $index" class="span5">
             <gig-thumbnail gig="gig"/>
         </li>
     </ul>
 </div>
-<div class="row">
-    <a class="btn btn-lg btn-success" ng-href="#/">Search <span class="glyphicon glyphicon-search"></span></a>
-  </div>
 </div>
 </div>
 

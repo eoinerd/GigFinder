@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <base href="/"/>
+    <base href="/">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width">
@@ -40,12 +40,12 @@
           <div class="collapse navbar-collapse" id="js-navbar-collapse">
 
             <ul class="nav navbar-nav">
-              <li class="active"><a href="/">Home</a></li>
-              <li><a ng-href="#/about">About</a></li>
-              <li><a ng-href="#/">Contact</a></li>
-              <li><a ng-href="#/search">Search</a></li>
-              <li><a ng-href="/gig/2">Connect</a></li>
-              <li><a href="#/newGig">Add New Gig</a></li>
+              <li class="active"><a href="/#/">Home</a></li>
+              <li><a ng-href="/#/about">About</a></li>
+              <li><a ng-href="/#/">Contact</a></li>
+              <li><a ng-href="/#/search">Search</a></li>
+              <li><a href="/#/gig/2">Connect</a></li>
+              <li><a href="/#/newGig">Add New Gig</a></li>
             </ul>
           </div>
         </div>
@@ -61,10 +61,14 @@
         <p><span class="glyphicon glyphicon-heart"></span> from the Eoinerd team!!!sdfsdf!</p>
       </div>
     </div>
+<input type="hidden" id="apiResponse"/>
 
+<script src="./bower_components/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
+
        !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
        (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
        r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
@@ -83,12 +87,14 @@
         <!-- <script src="./bower_components/jquery/dist/jquery-min.js"></script> -->
         <script src="./bower_components/angular/angular.js"></script>
         <script src="./bower_components/angular-aria/angular-aria.js"></script>
-        <script src="./bower_components/angular-route/angular-route.js"></script>
         <script src="./bower_components/angular-resource/angular-resource.js"></script>
+         <script src="./bower_components/angular-route/angular-route.js"></script>
         <script src="./bower_components/angular-sanitize/angular-sanitize.js"></script>
         <script src="./bower_components/angular-touch/angular-touch.js"></script>
         <script src="scripts/app.js"></script>
         <script src="scripts/controllers/GigListController.js"></script>
+        <script src="scripts/controllers/GigController.js"></script>
+        <script src="scripts/controllers/EditGigController.js"></script>
         <script src="scripts/directives/gigThumbnail.js"></script>
         <script src="scripts/services/gigData.js"></script>
         <!-- <script src="./bower_components/bootstrap/dist/js/bootstrap-min.js"></script> -->

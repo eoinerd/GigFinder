@@ -10,10 +10,24 @@
 gigFinderApp
   .controller('GigListController', function ($scope, gigData) {
 
-    $scope.gigs = gigData.getAllGigs();
+      $scope.gigs = gigData.getAllGigs();
 
-    console.log($scope.gigs);
-    
+      // var app_key = "WGVx6fGMfTP8Z38T";
+      // var oArgs = {
+      //               app_key: "WGVx6fGMfTP8Z38T" ,
+      //               id: "20218701",
+      //               page_size: 25 
+      //             };
+                  
+      // EVDB.API.call("/events/get", oArgs, function(oData) {
+      //     $("#apiResponse").val(JSON.stringify(oData));
+      //          var data = $("#apiResponse").val();
+      //         $scope.gigs = oData;
+      //         console.log($scope.gigs.withdrawn);
+      //         console.log($scope.gigs.address);
+      //         console.log($scope.gigs);
+      //   })
+
     // gigData.getGig()
     //     .then(function(gig) { 
     //         $scope.gig = gig.data; 

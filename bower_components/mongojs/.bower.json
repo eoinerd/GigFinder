@@ -1,0 +1,15 @@
+{
+  "name": "mongojs",
+  "homepage": "https://github.com/gett/mongojs",
+  "version": "2.4.1",
+  "_release": "2.4.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.4.1",
+    "commit": "e95b39c508987f6b402a39b022ebbbb6c4f77c52"
+  },
+  "_source": "https://github.com/gett/mongojs.git",
+  "_target": "^2.4.1",
+  "_originalSource": "mongojs",
+  "_direct": true
+}

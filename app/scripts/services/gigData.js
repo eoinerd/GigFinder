@@ -51,27 +51,25 @@ gigFinderApp.factory('gigData', function ($http, $resource) {
     ];
 
     return {
-        getGig: function() {
-            return resource.get({id:1});
-        },
-        saveGig: function(gig) {
-            gig.id = 999;
-            return resource.save(gig);
-        },
-        getAllGigs: function() {
-            console.log(gigs);
-            return gigs;
-        }
-        
+        // getGig: function(gigId) {
+        //     return resource.get({id:gigId});
+        // },
+        // saveGig: function(gig) {
+        //     gig.id = 999;
+        //     return resource.save(gig);
+        // },
+        // getAllGigs: function() {
+        //     console.log(gigs);
+        //     return gigs;
+        // } 
         //,
-        // getAllGigs: function(successcb) {
-        //     $http({method: 'GET', url: '/data/gig/1'})
-        //         .then(function (data, status, headers, config){
-        //             console.log(data);
-        //               successcb(data);
-        //            },function (data, status, headers, config){       
-        //            });
-        // }
+        getAllGigs: function() {
+            $http({method: 'GET', url: '/#/gigs'})
+                .then(function (data, status, headers, config){
+                    console.log(data);
+                   },function (data, status, headers, config){       
+            });
+        }
     };
 
 
