@@ -50,27 +50,54 @@ gigFinderApp.factory('gigData', function ($http, $resource) {
       }
     ];
 
-    return {
-        // getGig: function(gigId) {
-        //     return resource.get({id:gigId});
-        // },
-        // saveGig: function(gig) {
-        //     gig.id = 999;
-        //     return resource.save(gig);
-        // },
-        // getAllGigs: function() {
-        //     console.log(gigs);
-        //     return gigs;
-        // } 
-        //,
-        getAllGigs: function() {
-            $http({method: 'GET', url: '/#/gigs'})
-                .then(function (data, status, headers, config){
-                    console.log(data);
-                   },function (data, status, headers, config){       
-            });
-        }
+    var getGigs = function() {
+        console.log(gigs);
+        return gigs;
     };
+
+    var getGig = function(gigId) {
+        return resource.get({id:gigId});
+    };
+
+    var saveGig = function(gig) {
+        gig.id = 999;
+        return resource.save(gig);
+    };
+
+    return {
+        getGigs: getGigs,
+        saveGig: saveGig,
+        getGig: getGig
+      };
+
+    // return {
+    //     getGig: function(gigId) {
+    //         return resource.get({id:gigId});
+    //     },
+    //     saveGig: function(gig) {
+    //         gig.id = 999;
+    //         return resource.save(gig);
+    //     },
+    //     getAllGigs: function() {
+    //         console.log(gigs);
+    //         return gigs;
+    //     } 
+        // ,
+        // getAllGigs: function() {
+        //     // $http({method: 'GET', url: '/#/gigs'})
+        //     //     .then(function (data, status, headers, config){
+        //     //         console.log(data);
+        //     //        },function (data, status, headers, config){       
+        //     // });
+        //     return $http.get('/gigs')
+        //     .then(function(response) {
+        //         console.log("coming from servicejs", response.data);
+        //         //return data when promise resolved
+        //         //that would help you to continue promise chain.
+        //         return response.data;
+        //     });
+        //}
+    //};
 
 
     // var resource = $resource('/data/gigs/:id', {id:'@id'});

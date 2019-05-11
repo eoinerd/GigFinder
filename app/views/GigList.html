@@ -1,20 +1,69 @@
 <div class="jumbotron">
   <h1>Find A Gig!</h1>
-<div class="alert alert-dismissible alert-success">
+<!-- <div class="alert alert-dismissible alert-success">
   <button type="button" class="close" data-dismiss="alert">&times;</button>
   <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
-</div>
+</div> -->
   <div class="row">
     <input type="text" class="form-control" style="width: 83%;display: block;margin: 0 auto;" />
     <div style="padding:25px;">
       <a class="btn btn-lg btn-success" ng-href="#/">Search <span class="glyphicon glyphicon-search"></span></a>
       </div>
   </div>
-
-  <p class="lead">
-    <img src="/../images/Outlook-14-promo-shot.jpg" style="width: 90%;" alt="I'm Yeoman"><br>
-  </p>
-
+  <div class="container">
+    <div class="row">
+      <div>
+      <div id='events-panel' class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Events</h3>
+        </div>
+        <div class="panel-body">
+          <div id="events" class="list-group">
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Event title</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="venue"></p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Event title</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="venue"></p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Event title</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="venue"></p>
+            </a>
+            <a href="#" class="list-group-item">
+              <h4 class="list-group-item-heading">Event title</h4>
+              <p class="list-group-item-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              <p class="venue"></p>
+            </a>
+          </div>
+        </div>
+        <div class="panel-footer">
+          <nav>
+            <ul class="pager">
+              <li id="prev" class="previous"><a href="#"><span aria-hidden="true">&larr;</span></a></li>
+              <li id="next" class="next"><a href="#"><span aria-hidden="true">&rarr;</span></a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      
+      <div id='attraction-panel' class="panel panel-primary">
+        <div class="panel-heading">
+          <h3 class="panel-title">Attraction</h3>
+        </div>
+        <div id="attraction" class="panel-body">
+          <h4 class="list-group-item-heading">Attraction title</h4>
+          <img class="col-xs-12" src="">
+          <p id="classification"></p>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
   <div>    
     <hr/>
